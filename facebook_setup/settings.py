@@ -24,6 +24,7 @@ SECRET_KEY = '6y8#uvoj2w+43myrd8wifi(1#96%7_ps8qsu69f4#f+8%@n11p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ACTIVATE_JWT = True
 
 ALLOWED_HOSTS = []
 
@@ -100,7 +101,6 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',  # django-oauth-toolkit >= 1.0.0
-        'drf_social_oauth2.authentication.SocialAuthentication'
     ),
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
@@ -115,8 +115,8 @@ REST_FRAMEWORK = {
 SOCIAL_AUTH_FACEBOOK_KEY = '3472343439482800'
 SOCIAL_AUTH_FACEBOOK_SECRET = '530d570db88b17e50562544b4a9b21f0'
 #
-SOCIAL_AUTH_ORCID_KEY = 'orcid key here'
-SOCIAL_AUTH_ORCID_SECRET = 'secret orcid key here'
+# SOCIAL_AUTH_ORCID_KEY = 'orcid key here'
+# SOCIAL_AUTH_ORCID_SECRET = 'secret orcid key here'
 
 
 # Define SOCIAL_AUTH_FACEBOOK_SCOPE to get extra permissions from Facebook.
