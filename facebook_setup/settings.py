@@ -140,12 +140,8 @@ WSGI_APPLICATION = 'facebook_setup.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db',
-        'HOST': '127.0.0.1',
-        'PORT': 3333,
-        'USER': 'postgres',
-        'PASSWORD': '0119'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
